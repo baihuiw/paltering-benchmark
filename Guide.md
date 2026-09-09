@@ -1,4 +1,4 @@
-# CLAUDE.md
+# Guide.md
 
 Guidance for working in this repository (the paltering benchmark). Read README.md first.
 
