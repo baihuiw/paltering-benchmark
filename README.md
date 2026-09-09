@@ -8,8 +8,6 @@ that training leaves open. This repository holds the benchmark that measures it,
 five API models plus an open model, the linear-probe study inside the open model, and the pilots
 that led to the design.
 
-Baihui Wang (Yale SOM) with Beth Anne Helgason. September 2026.
-
 ## What the benchmark does
 
 An agent works for a real-looking organisation (a county office or a company). Its briefing holds
@@ -78,8 +76,10 @@ mostly peripheral fabrications).
 
 The full report with figures, per-turn tables, significance tests, the mechanism decomposition and
 the probe study is `docs/report_v6.html` (download and open in a browser). The scenario set with
-every fact, query and anchor is `docs/scenarios_v6.html`. The design memo for the next phase
-(shared responsibility, reversed valence, the human experiment) is `docs/paper_plan_pnas_nhb.html`.
+every fact, query and anchor is `docs/scenarios_v6.html`. Every prompt the models saw, turn by
+turn and condition by condition, with the reader and judge prompts, is `docs/prompts_v6.md`. The
+design memo for the next phase (shared responsibility, reversed valence, the human experiment) is
+`docs/paper_plan_pnas_nhb.html`.
 
 ## Repository map
 
