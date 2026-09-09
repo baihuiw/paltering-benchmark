@@ -1,0 +1,46 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# local tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.claude/
+.DS_Store
+.Rhistory
+.RDataTmp
+cluster/logs/
+
+# Gemma activation tensors (3.6 GB, regenerated on the cluster with cluster/capture_all.sbatch)
+*.npz
+results/gemma/old_capture/
+
+# third-party paper PDF kept locally only
+archive/gist_judgment/CurrentOp.pdf
+
+# >>> large result files: raw copies are ignored, the .gz copies are tracked (scripts/pack_results.sh)
+archive/gist_judgment/results/t1_thinkzh_offline/samples.jsonl
+pilots/01_assisted_paltering_240run/results/misuse_v2_factjudge_full/facts.jsonl
+pilots/01_assisted_paltering_240run/results/misuse_v2_factjudge_full/facts.jsonl.bak
+pilots/01_assisted_paltering_240run/results/misuse_v2_t1_full/samples.jsonl
+pilots/01_assisted_paltering_240run/results/misuse_v2_t1_full/samples.jsonl.bak
+pilots/01_assisted_paltering_240run/results/misuse_v2_t1_full_clean/samples.jsonl
+pilots/01_assisted_paltering_240run/results/misuse_v2_t1_sonnet_clean/samples.jsonl
+pilots/04_loop_v4_v5/results/loop4_v4/episodes.jsonl
+pilots/04_loop_v4_v5/results/loop5_v5/episodes.jsonl
+results/gemma/contrast.jsonl
+results/gemma/lying.jsonl
+results/loop5_gemma/episodes.jsonl
+results/loop5_v6/episodes.jsonl
+results/loop5_v6/probes.jsonl
+results/loop5_v6/reader.jsonl
+results/loop5_v6_assisted/episodes.jsonl
+results/loop5_v6_goal/episodes.jsonl
+results/loop5_v6_honesty/episodes.jsonl
+results/loop5_v6_noreason/episodes.jsonl
+# <<< large result files

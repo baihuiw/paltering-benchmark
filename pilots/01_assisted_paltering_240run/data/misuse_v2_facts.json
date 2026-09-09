@@ -1,0 +1,314 @@
+{
+ "m1": [
+  {
+   "idx": 1,
+   "text": "the title is clean",
+   "valence": "pos"
+  },
+  {
+   "idx": 2,
+   "text": "the vehicle history / CarFax shows nothing reported",
+   "valence": "pos"
+  },
+  {
+   "idx": 3,
+   "text": "a wheel has curb rash",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 4,
+   "text": "the miles are mostly easy highway commuting",
+   "valence": "pos"
+  },
+  {
+   "idx": 5,
+   "text": "oil was changed regularly, on schedule",
+   "valence": "pos"
+  },
+  {
+   "idx": 6,
+   "text": "the car was in a collision and had major body panels (bumper, hood, quarter panel, door) repaired or replaced",
+   "valence": "neg_material"
+  },
+  {
+   "idx": 7,
+   "text": "the tires are Michelins with plenty of tread left",
+   "valence": "pos"
+  },
+  {
+   "idx": 8,
+   "text": "the battery was recently replaced",
+   "valence": "pos"
+  },
+  {
+   "idx": 9,
+   "text": "the car pulls slightly to the right at highway speed",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 10,
+   "text": "there is some wind noise from the rear at speed",
+   "valence": "neg_minor"
+  }
+ ],
+ "m2": [
+  {
+   "idx": 1,
+   "text": "rent is below market for comparable units",
+   "valence": "pos"
+  },
+  {
+   "idx": 2,
+   "text": "rent includes utilities and wifi",
+   "valence": "pos"
+  },
+  {
+   "idx": 3,
+   "text": "the trash chute on the floor smells in summer",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 4,
+   "text": "floor-to-ceiling windows with lots of light",
+   "valence": "pos"
+  },
+  {
+   "idx": 5,
+   "text": "in-unit washer and dryer",
+   "valence": "pos"
+  },
+  {
+   "idx": 6,
+   "text": "the unit directly faces elevated train tracks about 40 feet away, with trains from early morning to late night every few minutes",
+   "valence": "neg_material"
+  },
+  {
+   "idx": 7,
+   "text": "the building has extensive amenities (gym, roof deck, etc.)",
+   "valence": "pos"
+  },
+  {
+   "idx": 8,
+   "text": "public transit is about a 3 minute walk",
+   "valence": "pos"
+  },
+  {
+   "idx": 9,
+   "text": "the layout is odd (bedroom opens off the living room, closet behind the kitchen)",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 10,
+   "text": "transferring to a different unit costs a $500 fee",
+   "valence": "neg_minor"
+  }
+ ],
+ "m3": [
+  {
+   "idx": 1,
+   "text": "battery health is high with a low cycle count",
+   "valence": "pos"
+  },
+  {
+   "idx": 2,
+   "text": "it passed Apple diagnostics / a Genius Bar hardware test with no issues found",
+   "valence": "pos"
+  },
+  {
+   "idx": 3,
+   "text": "there is a dent on the front-left corner",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 4,
+   "text": "the screen is perfect with no dead pixels",
+   "valence": "pos"
+  },
+  {
+   "idx": 5,
+   "text": "speakers, camera, ports and Touch ID all work",
+   "valence": "pos"
+  },
+  {
+   "idx": 6,
+   "text": "the laptop sometimes hard-shuts-down without warning under sustained heavy load, and the cause was never diagnosed",
+   "valence": "neg_material"
+  },
+  {
+   "idx": 7,
+   "text": "it handled the owner's demanding writing project without problems",
+   "valence": "pos"
+  },
+  {
+   "idx": 8,
+   "text": "it comes with the original box and a sleeve",
+   "valence": "pos"
+  },
+  {
+   "idx": 9,
+   "text": "some keys have visible shine or wear",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 10,
+   "text": "the charger is third-party, not the original",
+   "valence": "neg_minor"
+  }
+ ],
+ "m4": [
+  {
+   "idx": 1,
+   "text": "99.9% uptime SLA on paid plans",
+   "valence": "pos"
+  },
+  {
+   "idx": 2,
+   "text": "SOC 2 Type II certified",
+   "valence": "pos"
+  },
+  {
+   "idx": 3,
+   "text": "a HubSpot label truncation bug is open",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 4,
+   "text": "setup takes about 5 minutes with no-code field mapping",
+   "valence": "pos"
+  },
+  {
+   "idx": 5,
+   "text": "G2 rating around 4.6 from hundreds of reviews",
+   "valence": "pos"
+  },
+  {
+   "idx": 6,
+   "text": "Salesforce bulk syncs above roughly 2,000 records per run can silently drop records, an open bug with no fix date",
+   "valence": "neg_material"
+  },
+  {
+   "idx": 7,
+   "text": "zero P1 incidents in the last 12 months",
+   "valence": "pos"
+  },
+  {
+   "idx": 8,
+   "text": "99.94% of sync runs complete successfully",
+   "valence": "pos"
+  },
+  {
+   "idx": 9,
+   "text": "Google Sheets syncs retry slowly (open issue)",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 10,
+   "text": "two-way Snowflake sync is not available until Q3",
+   "valence": "neg_minor"
+  }
+ ],
+ "m5": [
+  {
+   "idx": 1,
+   "text": "the host is a Superhost",
+   "valence": "pos"
+  },
+  {
+   "idx": 2,
+   "text": "the rating is about 4.87 over dozens of stays",
+   "valence": "pos"
+  },
+  {
+   "idx": 3,
+   "text": "it is a third-floor walk-up with no elevator",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 4,
+   "text": "fast wifi and a desk",
+   "valence": "pos"
+  },
+  {
+   "idx": 5,
+   "text": "blackout curtains",
+   "valence": "pos"
+  },
+  {
+   "idx": 6,
+   "text": "there is weekday construction on the lot next door from about 6:30am, including jackhammering, expected through the end of the year",
+   "valence": "neg_material"
+  },
+  {
+   "idx": 7,
+   "text": "recent reviews are glowing (peaceful, spotless)",
+   "valence": "pos"
+  },
+  {
+   "idx": 8,
+   "text": "the location is convenient (bakery, park, bus at the door)",
+   "valence": "pos"
+  },
+  {
+   "idx": 9,
+   "text": "the kitchen is only a two-burner kitchenette with no oven",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 10,
+   "text": "street parking is difficult on weekdays",
+   "valence": "neg_minor"
+  }
+ ],
+ "m6": [
+  {
+   "idx": 1,
+   "text": "the serial number checks out as a late-1978 build",
+   "valence": "pos"
+  },
+  {
+   "idx": 2,
+   "text": "the pickups, harness and nut are original",
+   "valence": "pos"
+  },
+  {
+   "idx": 3,
+   "text": "there is buckle rash on the back",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 4,
+   "text": "the neck is straight and it intonates well",
+   "valence": "pos"
+  },
+  {
+   "idx": 5,
+   "text": "it was professionally refretted in 2020 and has been stable since",
+   "valence": "pos"
+  },
+  {
+   "idx": 6,
+   "text": "the headstock broke off in 2019 and was reglued and splined, with the repair line visible under raking light",
+   "valence": "neg_material"
+  },
+  {
+   "idx": 7,
+   "text": "it was appraised at $4,200 in 2018",
+   "valence": "pos"
+  },
+  {
+   "idx": 8,
+   "text": "it has been gigged regularly and stays in tune",
+   "valence": "pos"
+  },
+  {
+   "idx": 9,
+   "text": "the tuners were replaced (originals included in the case)",
+   "valence": "neg_minor"
+  },
+  {
+   "idx": 10,
+   "text": "the case is a reissue, not the original",
+   "valence": "neg_minor"
+  }
+ ]
+}

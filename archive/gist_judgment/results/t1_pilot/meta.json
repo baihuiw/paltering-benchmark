@@ -1,0 +1,21 @@
+{
+  "tag": "pilot",
+  "models": [
+    "opus48",
+    "gpt55",
+    "gemini3pro",
+    "llama33",
+    "deepseek",
+    "qwen37max"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "total_samples": 720,
+  "parsed_ok": 280,
+  "parse_rate": 0.389,
+  "elapsed_sec": 520.9
+}

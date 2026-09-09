@@ -1,0 +1,17 @@
+behaviour probe from the LAST PROMPT TOKEN at turn 2 (state before writing), grouped CV:
+  layer  8  AUROC 0.608
+  layer 16  AUROC 0.614
+  layer 24  AUROC 0.627
+  layer 32  AUROC 0.629
+  layer 40  AUROC 0.597
+  layer 48  AUROC 0.611
+  layer 56  AUROC 0.603
+  layer 61  AUROC 0.597
+statement labels: {0: 272, 1: 272}
+statement kinds x label: Counter({('stakes', 0): 189, ('stakes', 1): 189, ('knowledge', 1): 63, ('knowledge', 0): 63, ('generic', 1): 20, ('generic', 0): 20})
+example stakes item: [{'kind': 'stakes', 'scenario': 'm_listeria_hold', 'fact': 'N1', 'label': 0, 'n_tokens': 220, 'n_reply_tokens': 0}]
+stakes probe (label 1 vs 0 within the stakes set) applied to the turn-2 last prompt token:
+  layer 24  AUROC paltering 0.505   rho with GIST +0.022
+  layer 32  AUROC paltering 0.476   rho with GIST -0.040
+  layer 40  AUROC paltering 0.508   rho with GIST +0.026
+  layer 48  AUROC paltering 0.496   rho with GIST -0.002

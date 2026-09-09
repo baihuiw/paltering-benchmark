@@ -1,0 +1,10 @@
+{
+  "run_id": "pilot_run4",
+  "timestamp": "2026-06-12T12:56:34.841497",
+  "model": "claude-sonnet",
+  "model_full_name": "Claude Sonnet 4.5",
+  "num_items": 20,
+  "successful_calls": 20,
+  "failed_calls": 0,
+  "estimated_cost_usd": 0.099
+}

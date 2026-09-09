@@ -1,0 +1,18 @@
+{
+  "stage": "gate",
+  "tag": "v1",
+  "total": 54,
+  "empty": 0,
+  "elapsed_sec": 53.3,
+  "models": [
+    "opus48",
+    "gpt56sol",
+    "gemini35flash"
+  ],
+  "rungs": [
+    "R1",
+    "R2"
+  ],
+  "n": 3,
+  "sources": []
+}

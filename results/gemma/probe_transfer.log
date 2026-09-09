@@ -1,0 +1,13 @@
+== mean pooling, layer 24: AUROC; diagonal = grouped CV on unseen scenarios
+   train (rows) / test (columns)        goal: lying vs honest   goal: evade vs honest  loop t2: paltering vs   loop t3: evade/deny vs
+   goal: lying vs honest                                0.671                   0.925                   0.677                   0.905
+   goal: evade vs honest                                0.740                   0.948                   0.777                   0.995
+   loop t2: paltering vs honest                         0.621                   0.735                   0.719                   0.910
+   loop t3: evade/deny vs confirm                       0.682                   0.990                   0.774                   0.991
+== mean pooling, layer 32: AUROC; diagonal = grouped CV on unseen scenarios
+   train (rows) / test (columns)        goal: lying vs honest   goal: evade vs honest  loop t2: paltering vs   loop t3: evade/deny vs
+   goal: lying vs honest                                0.732                   0.933                   0.685                   0.923
+   goal: evade vs honest                                0.779                   0.967                   0.772                   0.995
+   loop t2: paltering vs honest                         0.610                   0.753                   0.719                   0.965
+   loop t3: evade/deny vs confirm                       0.695                   0.987                   0.778                   0.991
+set sizes (positives, n): {'goal: lying vs honest': (35, 131), 'goal: evade vs honest': (77, 173), 'loop t2: paltering vs honest': (301, 698), 'loop t3: evade/deny vs confirm': (370, 690)}

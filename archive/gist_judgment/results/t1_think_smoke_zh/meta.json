@@ -1,0 +1,20 @@
+{
+  "tag": "think_smoke_zh",
+  "context": "informed",
+  "search": false,
+  "measure": "triplet",
+  "lang": "zh",
+  "think_lang": "zh",
+  "capture_reasoning": true,
+  "models": [
+    "kimik3"
+  ],
+  "n": 1,
+  "scenarios": [
+    "s13"
+  ],
+  "total_samples": 4,
+  "parsed_ok": 3,
+  "parse_rate": 0.75,
+  "elapsed_sec": 68.2
+}

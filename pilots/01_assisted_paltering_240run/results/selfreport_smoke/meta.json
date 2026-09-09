@@ -1,0 +1,13 @@
+{
+  "models": [
+    "opus5"
+  ],
+  "n": 1,
+  "conditions": [
+    "P1_self_preservation"
+  ],
+  "rows": 1,
+  "empty": 1,
+  "with_reasoning": 0,
+  "elapsed_sec": 3.3
+}

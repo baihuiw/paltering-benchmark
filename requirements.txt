@@ -1,0 +1,12 @@
+# laptop: authoring, running, scoring, analysis, report
+openai>=1.40
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+statsmodels>=0.14
+
+# cluster only (Gemma generation and activation capture; see cluster/README_gemma.md)
+# torch>=2.3
+# transformers>=4.50
+# accelerate>=0.30
+# vllm>=0.8.5

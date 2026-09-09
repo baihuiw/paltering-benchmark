@@ -1,0 +1,21 @@
+{
+  "tag": "smoke_pilot",
+  "context": "cold",
+  "search": false,
+  "measure": "triplet",
+  "models": [
+    "gemini35flash",
+    "gpt56sol",
+    "opus48",
+    "qwen37plus",
+    "deepseekv4pro"
+  ],
+  "n": 1,
+  "scenarios": [
+    "s19"
+  ],
+  "total_samples": 20,
+  "parsed_ok": 20,
+  "parse_rate": 1.0,
+  "elapsed_sec": 36.7
+}

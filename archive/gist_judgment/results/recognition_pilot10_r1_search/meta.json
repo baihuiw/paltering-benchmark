@@ -1,0 +1,30 @@
+{
+  "tag": "pilot10_r1_search",
+  "tasks": [
+    "r1"
+  ],
+  "search": true,
+  "models": [
+    "gpt55",
+    "opus48",
+    "gemini3pro"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s2",
+    "s4",
+    "s12",
+    "s13",
+    "s17",
+    "s18",
+    "s21",
+    "s23",
+    "s26"
+  ],
+  "total_samples": 1200,
+  "parse_rate_r1": 0.21,
+  "parse_rate_r2": null,
+  "parse_rate_r3": null,
+  "elapsed_sec": 918.2
+}

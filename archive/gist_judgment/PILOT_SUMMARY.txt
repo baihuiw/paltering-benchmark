@@ -1,0 +1,74 @@
+================================================================================
+PILOT DATA COLLECTION SUMMARY
+================================================================================
+
+Date: June 12, 2026
+Model: Claude Sonnet 4.5 (via OpenRouter)
+
+COLLECTION RESULTS:
+------------------
+✅ Total runs completed: 10
+✅ Total API calls: 200
+✅ Total items processed: 200
+✅ Success rate: 100%
+✅ Failed calls: 0
+
+COST:
+-----
+Estimated total: $0.99
+Well under $3 budget ✓
+
+DATA STRUCTURE:
+---------------
+Each run contains 20 items:
+- 5 × fully_true (verbatim TRUE, gist TRUE)
+- 5 × palter (verbatim TRUE, gist FALSE)
+- 5 × truthy_falsehood (verbatim FALSE, gist TRUE)
+- 5 × blatant_falsehood (verbatim FALSE, gist FALSE)
+
+RESPONSE QUALITY:
+-----------------
+- Average response length: ~1,350 characters
+- All responses contain rich natural language assessments
+- Responses clearly differentiate between cell types
+- No JSON parsing (responses in natural language, not structured JSON)
+
+FILES GENERATED:
+----------------
+results/
+├── pilot_run1/  (metadata.json, results.json)
+├── pilot_run2/  (metadata.json, results.json)
+├── pilot_run3/  (metadata.json, results.json)
+├── pilot_run4/  (metadata.json, results.json)
+├── pilot_run5/  (metadata.json, results.json)
+├── pilot_run6/  (metadata.json, results.json)
+├── pilot_run7/  (metadata.json, results.json)
+├── pilot_run8/  (metadata.json, results.json)
+├── pilot_run9/  (metadata.json, results.json)
+└── pilot_run10/ (metadata.json, results.json)
+
+DATA COVERAGE:
+--------------
+5 scenarios × 4 cell types × 10 repetitions = 200 unique judgments
+
+Topics covered:
+1. Climate Change (family conversation)
+2. Immigration (professional report)
+3. Economic Performance (social media post)
+4. Vaccine Safety (advising friend)
+5. Crime & Policing (op-ed submission)
+
+ISSUE DISCOVERED & RESOLVED:
+-----------------------------
+❌ Initial issue: pilot_run10 directory created but empty
+✅ Resolution: Batch run completed successfully after ~45 minutes total
+✅ All 10 runs verified with complete data
+
+NEXT STEPS:
+-----------
+1. Analyze variance across the 10 runs
+2. Code qualitative responses to extract ethical judgments
+3. Compare model consistency across repetitions
+4. Examine patterns by cell_type (fully_true vs palter vs truthy_falsehood vs blatant_falsehood)
+
+================================================================================

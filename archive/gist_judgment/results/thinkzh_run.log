@@ -1,0 +1,2 @@
+8 scenarios × 4 cells × 3 models × N=10 = 960 samples (96 sampling jobs)
+wrote 960 rows to /Users/wangbaihui/gist-eval/results/t1_thinkzh_offline/samples.jsonl (921 parsed, 96%) in 3291.8s

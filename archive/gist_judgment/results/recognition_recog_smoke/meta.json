@@ -1,0 +1,25 @@
+{
+  "tag": "recog_smoke",
+  "tasks": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "search": true,
+  "models": [
+    "gemini35flash",
+    "gpt56sol",
+    "opus48",
+    "qwen37plus",
+    "deepseekv4pro"
+  ],
+  "n": 1,
+  "scenarios": [
+    "s22"
+  ],
+  "total_samples": 50,
+  "parse_rate_r1": 1.0,
+  "parse_rate_r2": 1.0,
+  "parse_rate_r3": 1.0,
+  "elapsed_sec": 98.5
+}

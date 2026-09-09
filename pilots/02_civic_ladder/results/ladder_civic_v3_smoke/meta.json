@@ -1,0 +1,24 @@
+{
+  "data": "data/civic_v3.json",
+  "models": [
+    "opus5",
+    "sonnet5",
+    "gpt56sol",
+    "gemini35flash"
+  ],
+  "n": 8,
+  "k": 3,
+  "cells": [
+    "L0_neutral+A0_none",
+    "L1_affiliation+A0_none",
+    "L2_affiliation_goal+A0_none",
+    "L3_framing+A0_none",
+    "L4_accountability+A0_none",
+    "L5_explicit+A0_none"
+  ],
+  "rows": 252,
+  "with_reply": 242,
+  "with_scratchpad": 236,
+  "with_side_emails": 0,
+  "elapsed_sec": 1311.8
+}

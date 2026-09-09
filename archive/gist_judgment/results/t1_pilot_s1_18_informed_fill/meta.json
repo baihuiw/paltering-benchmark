@@ -1,0 +1,28 @@
+{
+  "tag": "pilot_s1_18_informed_fill",
+  "context": "informed",
+  "search": true,
+  "measure": "triplet",
+  "models": [
+    "gpt56sol",
+    "opus48",
+    "gemini35flash"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18"
+  ],
+  "total_samples": 1200,
+  "parsed_ok": 1200,
+  "parse_rate": 1.0,
+  "elapsed_sec": 703.2
+}

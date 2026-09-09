@@ -1,0 +1,2 @@
+8 scenarios × 4 cells × 5 models × N=10 = 1600 samples (160 sampling jobs)
+wrote 1600 rows to /Users/wangbaihui/gist-eval/results/t1_pilot_s19_26_informed/samples.jsonl (1600 parsed, 100%) in 2076.8s

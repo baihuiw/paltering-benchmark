@@ -1,0 +1,21 @@
+{
+  "tag": "search_smoke",
+  "context": "cold",
+  "search": true,
+  "measure": "triplet",
+  "models": [
+    "gemini35flash",
+    "gpt56sol",
+    "opus48",
+    "qwen37plus",
+    "deepseekv4pro"
+  ],
+  "n": 1,
+  "scenarios": [
+    "s22"
+  ],
+  "total_samples": 20,
+  "parsed_ok": 20,
+  "parse_rate": 1.0,
+  "elapsed_sec": 42.6
+}

@@ -1,0 +1,28 @@
+{
+  "tag": "pilot_s19_26_informed",
+  "context": "informed",
+  "search": true,
+  "measure": "triplet",
+  "models": [
+    "gemini35flash",
+    "gpt56sol",
+    "opus48",
+    "qwen37plus",
+    "deepseekv4pro"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26"
+  ],
+  "total_samples": 1600,
+  "parsed_ok": 1600,
+  "parse_rate": 1.0,
+  "elapsed_sec": 2076.8
+}

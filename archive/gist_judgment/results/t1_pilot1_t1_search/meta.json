@@ -1,0 +1,19 @@
+{
+  "tag": "pilot1_t1_search",
+  "context": "cold",
+  "search": true,
+  "measure": "triplet",
+  "models": [
+    "gpt55",
+    "opus48",
+    "gemini3pro"
+  ],
+  "n": 5,
+  "scenarios": [
+    "s1"
+  ],
+  "total_samples": 60,
+  "parsed_ok": 60,
+  "parse_rate": 1.0,
+  "elapsed_sec": 91.7
+}

@@ -1,0 +1,8 @@
+turns 2+3: deceptive 114 vs honest 785; paltering 580 vs honest
+  layer   deceptive: unseen / new-episodes   paltering: unseen / new-episodes
+      8            0.572 / 0.745                    0.755 / 0.900
+     16            0.627 / 0.762                    0.754 / 0.901
+     24            0.539 / 0.737                    0.778 / 0.905
+     32            0.542 / 0.737                    0.774 / 0.904
+     40            0.529 / 0.739                    0.777 / 0.905
+     48            0.525 / 0.754                    0.765 / 0.907

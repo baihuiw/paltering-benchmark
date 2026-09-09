@@ -1,0 +1,32 @@
+{
+  "tag": "pilot10_recog",
+  "tasks": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "search": false,
+  "models": [
+    "gpt55",
+    "opus48",
+    "gemini3pro"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s2",
+    "s4",
+    "s12",
+    "s13",
+    "s17",
+    "s18",
+    "s21",
+    "s23",
+    "s26"
+  ],
+  "total_samples": 3000,
+  "parse_rate_r1": 0.977,
+  "parse_rate_r2": 0.998,
+  "parse_rate_r3": 1.0,
+  "elapsed_sec": 1815.9
+}

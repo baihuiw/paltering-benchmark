@@ -1,0 +1,6 @@
+model,extracted,wrong,hedged,t1_cold_gist
+deepseekv4pro,82.5,10.0,7.5,4.557
+gemini35flash,92.5,5.0,2.5,4.138
+gpt56sol,65.0,7.5,27.5,3.038
+opus48,92.5,0.0,7.5,2.913
+qwen37plus,87.5,2.5,10.0,4.025

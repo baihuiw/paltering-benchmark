@@ -1,0 +1,43 @@
+{
+  "tag": "pilot_s1_18_informed",
+  "context": "informed",
+  "search": true,
+  "measure": "triplet",
+  "models": [
+    "gpt56sol",
+    "opus48",
+    "gemini35flash"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18"
+  ],
+  "total_samples": 2160,
+  "parsed_ok": 2160,
+  "parse_rate": 1.0,
+  "elapsed_sec": 2444.2,
+  "_provenance": {
+    "note": "samples.jsonl is a MERGE, not the output of a single run. The original 2026-07-16 00:04 run hit the OpenRouter key cap ($300 limit, 403 'Key limit exceeded') partway through and returned parsed_ok=1014 / parse_rate=0.469. s1-s8 completed cleanly before the cap; s9-s18 were re-run as tag 'pilot_s1_18_informed_fill' (1200 rows, 100% parsed) and merged into this samples.jsonl at 00:25. meta.json was not rewritten at merge time, so parsed_ok/parse_rate above were stale until corrected 2026-07-24.",
+    "original_run_parsed_ok": 1014,
+    "original_run_parse_rate": 0.469,
+    "fill_run_tag": "pilot_s1_18_informed_fill",
+    "verified_2026_07_24": "2160 rows, 2160 unique (scenario,cell,model,sample_idx) keys, 0 duplicates, all context=informed search=true, 100% parsed"
+  }
+}

@@ -1,0 +1,2 @@
+8 scenarios × 4 cells × 1 models × N=10 = 320 samples (32 sampling jobs)
+wrote 320 rows to /Users/wangbaihui/gist-eval/results/t1_lang_en_kimi_informed/samples.jsonl (294 parsed, 92%) in 998.2s

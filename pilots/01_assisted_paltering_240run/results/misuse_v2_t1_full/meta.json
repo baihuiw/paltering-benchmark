@@ -1,0 +1,19 @@
+{
+  "stage": "t1",
+  "tag": "full",
+  "total": 6480,
+  "empty": 290,
+  "elapsed_sec": 50059.1,
+  "models": [
+    "opus5",
+    "gpt56sol",
+    "gemini35flash"
+  ],
+  "rungs": [
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "n": 3,
+  "sources": []
+}

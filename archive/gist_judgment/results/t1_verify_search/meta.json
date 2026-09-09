@@ -1,0 +1,19 @@
+{
+  "tag": "verify_search",
+  "context": "cold",
+  "search": true,
+  "measure": "triplet",
+  "models": [
+    "gpt55",
+    "opus48",
+    "gemini3pro"
+  ],
+  "n": 2,
+  "scenarios": [
+    "s12"
+  ],
+  "total_samples": 24,
+  "parsed_ok": 24,
+  "parse_rate": 1.0,
+  "elapsed_sec": 71.0
+}

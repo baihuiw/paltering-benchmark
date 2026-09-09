@@ -1,0 +1,10 @@
+turn-2 replies 698 (paltering 301); same features, two splits:
+layer  unseen scenarios (GroupKFold)   seen scenarios, new episodes (StratifiedKFold)
+    8                          0.709                                            0.889
+   16                          0.661                                            0.883
+   24                          0.719                                            0.891
+   32                          0.719                                            0.907
+   40                          0.719                                            0.903
+   48                          0.699                                            0.898
+   56                          0.713                                            0.902
+   61                          0.723                                            0.901

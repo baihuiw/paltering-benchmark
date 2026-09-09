@@ -1,0 +1,50 @@
+2235 classified turn-1..3 replies
+128 configurations x layers; scenario-grouped 5-fold CV
+ AUROC  data  labels feat       centre    model     layer  n_pal     n
+ 0.826  t123  sharp  mean       none      massmean     24    615  1879
+ 0.823  t123  sharp  concat     none      massmean   None    615  1879
+ 0.822  t123  sharp  mean+last  none      lr:0.05      24    615  1879
+ 0.816  t123  sharp  mean+last  none      lr:0.5       24    615  1879
+ 0.811  t123  sharp  mean       none      lr:0.05      24    615  1879
+ 0.806  t123  sharp  mean       none      lr:0.5       24    615  1879
+ 0.798  t123  sharp  concat     none      lr:0.05    None    615  1879
+ 0.797  t123  all    mean       none      massmean     24    751  2121
+ 0.796  t123  all    concat     none      massmean   None    751  2121
+ 0.791  t123  all    mean       none      lr:0.05      24    751  2121
+ 0.790  t2    sharp  mean       none      lr:0.05      61    258   616
+ 0.789  t123  all    mean+last  none      lr:0.05      24    751  2121
+ 0.789  t2    sharp  mean       none      lr:0.5       61    258   616
+ 0.788  t123  sharp  mean+last  none      ridge        24    615  1879
+ 0.787  t123  sharp  concat     none      lr:0.5     None    615  1879
+ 0.786  t2    sharp  concat     none      lr:0.05    None    258   616
+ 0.785  t123  all    mean       none      lr:0.5       24    751  2121
+ 0.784  t123  sharp  mean       none      ridge        48    615  1879
+ 0.783  t123  all    mean+last  none      lr:0.5       24    751  2121
+ 0.782  t123  all    concat     none      lr:0.05    None    751  2121
+ 0.781  t123  sharp  mean+last  none      massmean     24    615  1879
+ 0.781  t2    sharp  concat     none      lr:0.5     None    258   616
+ 0.777  t2    sharp  mean+last  none      lr:0.05      40    258   616
+ 0.773  t123  all    concat     none      lr:0.5     None    751  2121
+ 0.773  t2    sharp  mean+last  none      lr:0.5       40    258   616
+baseline (turn 2, all, mean, none, lr:0.5): ['0.720']
+within-episode delta (t2 mean - t1 mean), turn-2 labels:
+  layer  8 lr:0.5    AUROC 0.661
+  layer  8 massmean  AUROC 0.697
+  layer 16 lr:0.5    AUROC 0.665
+  layer 16 massmean  AUROC 0.707
+  layer 24 lr:0.5    AUROC 0.716
+  layer 24 massmean  AUROC 0.718
+  layer 32 lr:0.5    AUROC 0.690
+  layer 32 massmean  AUROC 0.720
+  layer 40 lr:0.5    AUROC 0.669
+  layer 40 massmean  AUROC 0.718
+  layer 48 lr:0.5    AUROC 0.713
+  layer 48 massmean  AUROC 0.718
+  layer 56 lr:0.5    AUROC 0.697
+  layer 56 massmean  AUROC 0.716
+  layer 61 lr:0.5    AUROC 0.699
+  layer 61 massmean  AUROC 0.714
+temporal check (train turn 2 -> test turn 3) for the top configurations trained on turn 2:
+  sharp  mean       none      lr:0.05   L61: CV 0.790 -> turn-3 test AUROC 0.955, rho with GIST +0.740
+  sharp  mean       none      lr:0.5    L61: CV 0.789 -> turn-3 test AUROC 0.954, rho with GIST +0.738
+  sharp  concat     none      lr:0.05   LNone: CV 0.786 -> turn-3 test AUROC 0.953, rho with GIST +0.739

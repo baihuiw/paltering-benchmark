@@ -1,0 +1,28 @@
+{
+  "tag": "lang_zh_informed",
+  "context": "informed",
+  "search": true,
+  "measure": "triplet",
+  "lang": "zh",
+  "models": [
+    "gpt56sol",
+    "opus48",
+    "gemini35flash",
+    "kimik3"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s4",
+    "s12",
+    "s13",
+    "s18",
+    "s21",
+    "s23",
+    "s26"
+  ],
+  "total_samples": 1280,
+  "parsed_ok": 1228,
+  "parse_rate": 0.959,
+  "elapsed_sec": 2027.6
+}

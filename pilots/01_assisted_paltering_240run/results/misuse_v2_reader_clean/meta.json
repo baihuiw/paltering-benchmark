@@ -1,0 +1,21 @@
+{
+  "stage": "reader",
+  "tag": "clean",
+  "total": 1098,
+  "empty": 0,
+  "elapsed_sec": 85.9,
+  "models": [
+    "opus48",
+    "gpt56sol",
+    "gemini35flash"
+  ],
+  "rungs": [
+    "R1",
+    "R2"
+  ],
+  "n": 5,
+  "sources": [
+    "misuse_v2_t1_clean",
+    "misuse_v2_t2_clean"
+  ]
+}

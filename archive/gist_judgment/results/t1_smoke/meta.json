@@ -1,0 +1,15 @@
+{
+  "tag": "smoke",
+  "models": [
+    "gemini25flash",
+    "deepseek"
+  ],
+  "n": 5,
+  "scenarios": [
+    "s1"
+  ],
+  "total_samples": 40,
+  "parsed_ok": 40,
+  "parse_rate": 1.0,
+  "elapsed_sec": 9.6
+}

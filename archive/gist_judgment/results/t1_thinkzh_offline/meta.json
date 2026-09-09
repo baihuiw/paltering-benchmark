@@ -1,0 +1,29 @@
+{
+  "tag": "thinkzh_offline",
+  "context": "informed",
+  "search": false,
+  "measure": "triplet",
+  "lang": "zh",
+  "think_lang": "zh",
+  "capture_reasoning": true,
+  "models": [
+    "kimik3",
+    "deepseekv4pro",
+    "qwen37plus"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s4",
+    "s12",
+    "s13",
+    "s18",
+    "s21",
+    "s23",
+    "s26"
+  ],
+  "total_samples": 960,
+  "parsed_ok": 921,
+  "parse_rate": 0.959,
+  "elapsed_sec": 3291.8
+}

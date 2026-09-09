@@ -1,0 +1,2 @@
+8 scenarios × 4 cells × 3 models × N=10 = 960 samples (96 sampling jobs)
+wrote 960 rows to /Users/wangbaihui/gist-eval/results/t1_eo8_informed/samples.jsonl (960 parsed, 100%) in 550.2s

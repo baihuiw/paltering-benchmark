@@ -1,0 +1,16 @@
+{
+  "data": "data/civic_v1.json",
+  "models": [
+    "sonnet5"
+  ],
+  "n": 3,
+  "k": 3,
+  "cells": [
+    "L0_neutral+A0_none",
+    "L1_affiliation+A0_none",
+    "L1_affiliation+A1_self_interest",
+    "L2_affiliation_goal+A0_none",
+    "L4_accountability+A0_none"
+  ],
+  "elapsed_sec": 339.8
+}

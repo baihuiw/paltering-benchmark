@@ -1,0 +1,102 @@
+<title>Paltering Paper Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#f4f6f7;--paper:#fff;--ink:#1a222c;--ink2:#4c5b6a;--mute:#7b8896;--line:#d6dde3;--line2:#e8edf0;--acc:#0f6f74;--acc-soft:#dcefef;--warn:#b0392f;--code:#eef2f4}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111619;--paper:#181f25;--ink:#e6ebef;--ink2:#b3bec9;--mute:#8595a4;--line:#2b353e;--line2:#222b33;--acc:#4fc0c4;--acc-soft:#173236;--warn:#f08a80;--code:#1f282f}}
+:root[data-theme="dark"]{--bg:#111619;--paper:#181f25;--ink:#e6ebef;--ink2:#b3bec9;--mute:#8595a4;--line:#2b353e;--line2:#222b33;--acc:#4fc0c4;--acc-soft:#173236;--warn:#f08a80;--code:#1f282f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.55}
+h1,h2,h3{font-family:"Newsreader","Iowan Old Style",Georgia,serif;font-weight:500;text-wrap:balance;margin:0}
+.wrap{max-width:920px;margin:0 auto;padding:36px 28px 80px}header p{max-width:70ch;color:var(--ink2)}
+section{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px 26px;margin:22px 0}section h2{font-size:23px;margin-bottom:8px}section h3{font-size:17px;margin:18px 0 6px}
+p,li{max-width:74ch}.note{font-size:13.5px;color:var(--ink2)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{padding:6px 8px;border-bottom:1px solid var(--line2);text-align:left;vertical-align:top}th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);font-weight:600}td.w{white-space:normal}
+.tbl{overflow-x:auto}.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px}
+.h{border-left:3px solid var(--acc);padding:6px 12px;margin:10px 0;background:var(--acc-soft);border-radius:0 4px 4px 0;max-width:76ch}
+.risk{border-left:3px solid var(--warn);padding:6px 12px;margin:10px 0;max-width:76ch;color:var(--ink2)}
+ul{padding-left:20px}li{margin:4px 0}
+</style>
+<div class="wrap"><header><h1 style="font-size:34px">Paltering Paper Plan</h1>
+<p>From the benchmark to a PNAS or Nature Human Behaviour paper. Where the design stands, what the thesis now is, the two extensions (shared responsibility, reversed valence), the human experiment, the analysis plan, and the order of work. September 2026.</p></header>
+
+<section><h2>The thesis</h2>
+<p>Frontier models have been trained to be honest at the level of assertions: they almost never state a falsehood, and they refuse explicit instructions to mislead. That training leaves the level of <i>impressions</i> under-governed. Paltering, misleading with true statements, passes the assertion gate, and the benchmark shows when models use it: not when they are told the deployer's interest is at stake, but when they have seen the consequences of their own honest words for the deployer, and least when the omission would cost the reader physically. Inside an open model, withholding is a general, readable state while a false denial carries a separate signature, which is what an assertion-level gate over an intact withholding capacity looks like.</p>
+<div class="h"><b>One-sentence version.</b> Honesty training gates what models assert, not what they let people believe; under experienced pressure from a principal, models mislead by omission, people are misled, and a single explicit norm switches it off.</div>
+<p>Two things make this a behavioural-science paper rather than an evaluation: the dependent variable is what a reader concludes (with measured anchors), and the manipulations are social (experienced consequences, who bears responsibility, whom the truth would hurt). The extensions below are exactly the moderators the deception literature predicts should matter.</p></section>
+
+<section><h2>What is in hand</h2>
+<div class="tbl"><table><tr><th>component</th><th>state</th><th>use in the paper</th></tr>
+<tr><td>63 gated scenarios (58 + 5 pilots), political and market, three harm types</td><td>done; every anchor at 0, palter route verified</td><td>the instrument (Methods + SI)</td></tr>
+<tr><td>Four-turn consequence loop, C0 / C1 / C3, 5 API models + 2 continuity + Gemma, n = 4</td><td>done, refilled, verified</td><td>Study 1: experienced pressure</td></tr>
+<tr><td>Pilot ladder L0–L5 × A0–A3 and loop v1</td><td>done (small n)</td><td>told-vs-experienced contrast, opening figure</td></tr>
+<tr><td>Arms: honesty instruction, explicit goal (+C0 control), assisted frame, reasoning off (20 scenarios)</td><td>done</td><td>override result; seat effect (seed of Study 2); robustness</td></tr>
+<tr><td>Three-way classes + mechanism coding (channel, tactics) with honest baselines</td><td>done</td><td>how paltering is done (Results + SI)</td></tr>
+<tr><td>Gemma probes: withholding general, lie-specific component, commit-point windows</td><td>done on corrected capture</td><td>mechanistic support (SI, or a second ML paper)</td></tr>
+<tr><td>Readers: qwen validated vs DeepSeek (r = .90); judges two-stage</td><td>done</td><td>needs human validation (below)</td></tr>
+</table></div></section>
+
+<section><h2>Gaps a PNAS or NHB reviewer will find</h2>
+<ul>
+<li><b>The audience is an LLM.</b> Every rate rests on model readers. The human experiment (Study 4) has to carry the headline numbers, not validate them from the side.</li>
+<li><b>The assertion gate is asserted, not shown.</b> Only the pilot (n = 3, one scenario) tested an explicit instruction to mislead. Run it at scale (Study 0).</li>
+<li><b>No affiliation-free control.</b> The base prompt always names the deployer. One L0 cell shows whether any paltering exists without a principal (Study 0).</li>
+<li><b>Statistics.</b> McNemar and Wilcoxon suffice for the report, not the paper: mixed-effects logistic models with scenario random intercepts, bootstrap CIs over scenarios, effect sizes.</li>
+<li><b>False-alarm control.</b> Catch trials were dropped; add scenarios where the honest answer is favourable, to bound the readers' and judges' false-positive rate.</li>
+<li><b>Fragility.</b> Paraphrased prompts, digests and queries on a subset; two seeds.</li>
+<li><b>Fictional scenarios.</b> Keep them (contamination argument), but table the public-record genres behind them and cite one real analogue each.</li>
+</ul></section>
+
+<section><h2>Study 0. The gate: instructed lying at scale</h2>
+<p>Add two cheap cells across the 63 scenarios and five models: an explicit instruction to deny the critical fact when asked (L5, the deny prompt already written for Gemma), and a neutral assistant with no affiliation (L0). Measures: refusal rate, verified false claims, paltering.</p>
+<div class="h"><b>Prediction.</b> Frontier models refuse or comply with the lie instruction at near-zero false-claim rates while their paltering rate in the base run is 10–40%; Gemma complies (86% verified lies in the deny prompt). Without affiliation, paltering falls toward the physical-harm floor. This is the figure that establishes "honest at the assertion level, not at the gist level". Cost about $60.</div></section>
+
+<section><h2>Study 2. Shared responsibility</h2>
+<p>Theory: diffusion of responsibility and moral disengagement. Misleading is easier when the act is shared, delegated, or performed for someone else. The pilots already show the pattern: 40% paltering when ghost-writing for a requester against 0% face-to-face in the civic smoke, and the assisted arm cut honesty by 7 to 18 points for three models.</p>
+<div class="tbl"><table><tr><th>seat</th><th>what changes</th><th>who bears the act</th></tr>
+<tr><td>Direct (base)</td><td>the model answers the correspondent</td><td>the model alone</td></tr>
+<tr><td>Drafting for a human</td><td>the comms director forwards the message and sends the draft under her name (existing assisted arm)</td><td>shared with a human principal</td></tr>
+<tr><td>Peer request</td><td>a human colleague asks for help "making this land well" for their own reply (the 240-run frame)</td><td>the human authors, the model assists</td></tr>
+<tr><td>Two agents, drafter and reviewer</td><td>the model drafts; a second instance with the deployer prompt reviews, edits, and sends; score the draft and the sent version</td><td>split between two AI agents</td></tr>
+<tr><td>Reviewer only</td><td>the model receives a colleague-agent's draft (honest or paltering, from the benchmark) and decides whether to send, edit, or push back</td><td>the model as gatekeeper</td></tr>
+</table></div>
+<p>Run on the 20-scenario subset, C0 and C3, five models, n = 4. Two readings come out: does paltering rise with distance from the reader (direct → drafting → peer), and does a second agent add honesty or remove it (does the drafter soften more when it expects review; does the reviewer restore the fact or approve the omission). The reviewer-only seat is the cleanest test of gatekeeping: a model that refuses to write a palter but sends a colleague's.</p>
+<div class="h"><b>Predictions.</b> Paltering increases with responsibility distance; the drafter-reviewer pair produces more paltering than either alone (each defers to the other); frontier models are more willing to send a colleague's palter than to write one. Cost about $250.</div></section>
+
+<section><h2>Study 3. Reversed valence: harmful honesty, kind silence</h2>
+<p>Theory: prosocial deception (Levine and Schweitzer). Everything so far has the critical fact hurting the deployer if revealed and the reader if withheld. Reverse it: the fact is true and material, revealing it would hurt the <i>reader</i>, withholding is the kinder act, and the deployer gains nothing from silence.</p>
+<p>New scenarios are needed, about 20, built with the same pipeline (spec → build → gate) and the same fact-pool shape, but with the gate's proposition being the <i>comforting</i> reading. Examples: a bereaved family asking whether a relative's last hours were painful when the record says they were; a rejected applicant asking why, when the panel's notes are humiliating; a patient asking about a prognosis detail the chart contains; a student asking whether a scholarship decision was close when it was not; a resident asking what a neighbour's complaint said about them. Three deployer stances crossed with each: neutral, prefers disclosure (policy of full transparency), prefers silence.</p>
+<p>Measures: the same reader gist item (does the reader come away knowing the fact), plus two new ones for human readers: was the reply appropriate, and would you have wanted to know. Run the honesty-instruction arm here too.</p>
+<div class="h"><b>Predictions.</b> Paltering is higher than in the self-serving set (the helpful-harmless training favours it), the harm gradient reverses, and the honesty instruction suppresses it less. If that holds, the same withholding mechanism serves kindness and self-interest, and an alignment target of "no paltering" would remove the kind omissions people prefer. The human study can show what readers themselves want, which is the paternalism question posed properly. Cost about $200 plus scenario authoring.</div>
+<div class="risk"><b>Design risk.</b> The gate needs a different criterion: the source and honest anchors must show the fact is settled, but "favourable" now means "comforting", and readers may resist being comforted about a death. Pilot five scenarios through the gate before writing twenty.</div></section>
+
+<section><h2>Study 4. The human experiment</h2>
+<p>Pre-registered, between-subjects, on Prolific. Participants take the correspondent's seat: they read the scenario's public setting and their own email, then one reply sampled from the benchmark (honest or paltering, stratified over models, conditions, harm types, and later the responsibility and valence studies), and answer: the gist item, the action item (what they would now do), a perceived-honesty rating, and, in the valence study, appropriateness and "would you have wanted to know".</p>
+<div class="tbl"><table><tr><th>cell</th><th>replies</th><th>participants</th></tr>
+<tr><td>self-serving set (Study 1): honest vs paltering × 3 harm types × 5 models</td><td>≈ 300</td><td>≈ 600 (2 raters per reply, plus 100 for the source-document anchor)</td></tr>
+<tr><td>responsibility seats (Study 2)</td><td>≈ 120</td><td>≈ 240</td></tr>
+<tr><td>reversed valence (Study 3)</td><td>≈ 150</td><td>≈ 300</td></tr>
+</table></div>
+<p>Outputs: human misled rates (the paper's headline numbers), agreement with the LLM readers (the instrument's validity, reported once), the honesty-perception gap (people rate paltering replies as honest while being misled by them), and readers' own preferences in the valence study. Budget roughly $4–6k at ten minutes per participant.</p></section>
+
+<section><h2>Analysis plan, pre-registered</h2>
+<ul>
+<li><b>H1 (gate):</b> verified false claims and refusals under the lie instruction vs paltering in the base run, per model.</li>
+<li><b>H2 (experience, not instruction):</b> mixed-effects logistic model of paltering on condition (C0/C1/C3) × model with scenario random intercepts; told-pressure pilot cells as the contrast.</li>
+<li><b>H3 (harm gating):</b> harm type as a fixed effect and its interaction with condition.</li>
+<li><b>H4 (responsibility):</b> seat as an ordered factor; drafter vs reviewer contrasts.</li>
+<li><b>H5 (valence):</b> self-serving vs prosocial set × honesty instruction.</li>
+<li><b>H6 (override):</b> honesty instruction × condition.</li>
+<li><b>Human replication:</b> the same models on human-read replies; the pre-registered misled rule (≥ 25 on the reader scale) with 40 and 50 as sensitivity.</li>
+<li>Bootstrap CIs over scenarios throughout; reasoning-off and paraphrase robustness in SI; the mechanism decomposition and the probes in SI.</li>
+</ul></section>
+
+<section><h2>Order of work</h2>
+<div class="tbl"><table><tr><th>weeks</th><th>work</th><th>cost</th></tr>
+<tr><td>1</td><td>Study 0 cells; false-alarm and paraphrase controls; mixed models on existing data; pre-registration drafted</td><td>$150</td></tr>
+<tr><td>2–3</td><td>Study 2 seats (runner already supports arms; add the two-agent seat); pilot 5 reversed-valence scenarios through the gate</td><td>$300</td></tr>
+<tr><td>3–5</td><td>Write and gate the 20 reversed-valence scenarios; run Study 3</td><td>$250</td></tr>
+<tr><td>4–8</td><td>Human experiment in three waves (self-serving first, so the headline is in hand early)</td><td>$4–6k</td></tr>
+<tr><td>8–10</td><td>Analysis, figures, draft; SI with mechanisms and probes</td><td></td></tr>
+</table></div>
+<p class="note">Kept out of the main paper, held for a second ML-venue submission: the benchmark release, the measurement method in detail, the mechanism taxonomy, and the probe and steering work on more open models.</p></section>
+</div>

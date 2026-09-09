@@ -1,0 +1,32 @@
+{
+  "tag": "recog_s19_26",
+  "tasks": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "search": true,
+  "models": [
+    "gemini35flash",
+    "gpt56sol",
+    "opus48",
+    "qwen37plus",
+    "deepseekv4pro"
+  ],
+  "n": 5,
+  "scenarios": [
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26"
+  ],
+  "total_samples": 2000,
+  "parse_rate_r1": 1.0,
+  "parse_rate_r2": 1.0,
+  "parse_rate_r3": 0.998,
+  "elapsed_sec": 2456.1
+}

@@ -1,0 +1,41 @@
+{
+  "tag": "recog_s1_18_offline",
+  "tasks": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "search": false,
+  "r2_search": false,
+  "models": [
+    "gpt56sol",
+    "opus48",
+    "gemini35flash"
+  ],
+  "n": 5,
+  "scenarios": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18"
+  ],
+  "total_samples": 2700,
+  "parse_rate_r1": 1.0,
+  "parse_rate_r2": 1.0,
+  "parse_rate_r3": 1.0,
+  "elapsed_sec": 1153.0
+}

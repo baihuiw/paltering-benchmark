@@ -1,0 +1,19 @@
+{
+  "tag": "v1",
+  "models": [
+    "gpt56sol",
+    "opus48",
+    "gemini35flash",
+    "kimik3"
+  ],
+  "n": 3,
+  "topics": [
+    "s1",
+    "s12",
+    "s13",
+    "s18",
+    "s26"
+  ],
+  "total": 120,
+  "elapsed_sec": 300.5
+}

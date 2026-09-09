@@ -1,0 +1,17 @@
+{
+  "stage": "t1",
+  "tag": "sonnet",
+  "total": 2160,
+  "empty": 11,
+  "elapsed_sec": 6893.7,
+  "models": [
+    "sonnet5"
+  ],
+  "rungs": [
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "n": 3,
+  "sources": []
+}

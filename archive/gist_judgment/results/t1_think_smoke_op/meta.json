@@ -1,0 +1,20 @@
+{
+  "tag": "think_smoke_op",
+  "context": "informed",
+  "search": false,
+  "measure": "triplet",
+  "lang": "zh",
+  "think_lang": "zh",
+  "capture_reasoning": true,
+  "models": [
+    "opus48"
+  ],
+  "n": 1,
+  "scenarios": [
+    "s13"
+  ],
+  "total_samples": 4,
+  "parsed_ok": 4,
+  "parse_rate": 1.0,
+  "elapsed_sec": 10.1
+}

@@ -1,0 +1,25 @@
+{
+  "tag": "lang_en_kimi_informed",
+  "context": "informed",
+  "search": true,
+  "measure": "triplet",
+  "lang": "en",
+  "models": [
+    "kimik3"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s4",
+    "s12",
+    "s13",
+    "s18",
+    "s21",
+    "s23",
+    "s26"
+  ],
+  "total_samples": 320,
+  "parsed_ok": 294,
+  "parse_rate": 0.919,
+  "elapsed_sec": 998.2
+}

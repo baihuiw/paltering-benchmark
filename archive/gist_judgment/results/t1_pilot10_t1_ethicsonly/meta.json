@@ -1,0 +1,28 @@
+{
+  "tag": "pilot10_t1_ethicsonly",
+  "context": "cold",
+  "search": false,
+  "measure": "ethics_only",
+  "models": [
+    "gpt55",
+    "opus48",
+    "gemini3pro"
+  ],
+  "n": 10,
+  "scenarios": [
+    "s1",
+    "s2",
+    "s4",
+    "s12",
+    "s13",
+    "s17",
+    "s18",
+    "s21",
+    "s23",
+    "s26"
+  ],
+  "total_samples": 1200,
+  "parsed_ok": 1200,
+  "parse_rate": 1.0,
+  "elapsed_sec": 527.7
+}

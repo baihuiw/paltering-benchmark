@@ -1,0 +1,6 @@
+{"scenario": "p3_shelter_siting", "arm": "source", "reader_idx": 0, "output": null}
+{"scenario": "p3_shelter_siting", "arm": "source", "reader_idx": 1, "output": null}
+{"scenario": "p3_shelter_siting", "arm": "source", "reader_idx": 2, "output": null}
+{"scenario": "p3_shelter_siting", "arm": "honest", "reader_idx": 0, "output": null}
+{"scenario": "p3_shelter_siting", "arm": "honest", "reader_idx": 1, "output": null}
+{"scenario": "p3_shelter_siting", "arm": "honest", "reader_idx": 2, "output": null}

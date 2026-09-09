@@ -1,0 +1,18 @@
+{
+  "tag": "kimi_smoke",
+  "context": "informed",
+  "search": true,
+  "measure": "triplet",
+  "lang": "en",
+  "models": [
+    "kimik3"
+  ],
+  "n": 1,
+  "scenarios": [
+    "s5"
+  ],
+  "total_samples": 4,
+  "parsed_ok": 4,
+  "parse_rate": 1.0,
+  "elapsed_sec": 33.2
+}

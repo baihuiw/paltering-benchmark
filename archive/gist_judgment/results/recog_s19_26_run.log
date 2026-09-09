@@ -1,0 +1,2 @@
+8 scenarios | tasks=['r1', 'r2', 'r3'] | 560 sampling jobs | search=on (r1/r3)
+wrote 2000 rows to /Users/wangbaihui/gist-eval/results/recognition_recog_s19_26/samples.jsonl (parse r1=1.0 r2=1.0 r3=0.998) in 2456.1s

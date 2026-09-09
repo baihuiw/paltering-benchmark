@@ -1,0 +1,22 @@
+{
+  "tag": "r2v2_smoke",
+  "tasks": [
+    "r2"
+  ],
+  "search": false,
+  "r2_search": false,
+  "models": [
+    "gpt56sol",
+    "opus48",
+    "gemini35flash"
+  ],
+  "n": 2,
+  "scenarios": [
+    "s5"
+  ],
+  "total_samples": 24,
+  "parse_rate_r1": null,
+  "parse_rate_r2": 1.0,
+  "parse_rate_r3": null,
+  "elapsed_sec": 10.3
+}
